@@ -46,11 +46,11 @@ main {
 .card-container {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.4rem;
 
     width: 100%;
     max-width: 24rem;
-    height: 32.625rem;
+    height: 32.825rem;
     margin: 0 auto;
     padding-block: 1.5rem;
     padding-inline: 1.5rem;
@@ -69,10 +69,32 @@ main {
         font-size: clamp(0.875rem, 1.5vw, 1.125rem);
         font-weight: bold;
         line-height: 150%;
+    }
 
-        &:nth-child(2) {
-            color: #111111;
+    & .middle-section>:nth-child(2) {
+        font-size: clamp(0.875rem, 1.5vw, 1.125rem);
+        line-height: 150%;
+        font-weight: 400;
+        color: var(--darkgray-color);
+    }
+
+    & .middle-section>:nth-child(3) {
+        font-size: clamp(1.25rem, 1.5vw, 1.5rem);
+        line-height: 150%;
+        font-weight: 900;
+        text-shadow: 0 3px 3px #1111112f;
+        
+        &:hover {
+            cursor: pointer;
+            color: var(--primary-color);
+            text-shadow: 1px 2px 2px #1111118c;
         }
+    }
+
+    & .middle-section>:nth-child(4) {
+        font-size: clamp(0.875rem, 1.5vw, 1rem);
+        color: var(--lightgray-color);
+        line-height: 150%;
     }
 
 }
@@ -81,4 +103,25 @@ main {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
+}
+
+
+.bottom-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.75rem;
+
+    height: 100%;
+
+
+    & img {
+        width: 32px;
+        height: 32px;
+    }
+
+    & span {
+        font-size: clamp(0.875rem, 1.5vw, 0.9rem);
+        font-weight: 800;
+    }
 }
