@@ -59,7 +59,17 @@ main {
     box-shadow: var(--shadow-lg);
     background-color: var(--secondary-color);
 
-    
+    & .top-section {
+        & picture {
+            width: 100%;
+            height: auto;
+
+            & img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
     
     & .middle-section>:nth-child(1) {
         background-color: var(--primary-color);
@@ -83,6 +93,8 @@ main {
         line-height: 150%;
         font-weight: 900;
         text-shadow: 0 3px 3px #1111112f;
+
+        transition: color 0.1s ease-in-out;
         
         &:hover {
             cursor: pointer;
