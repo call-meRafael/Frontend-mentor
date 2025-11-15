@@ -93,6 +93,7 @@ main {
         line-height: 150%;
         font-weight: 900;
         text-shadow: 0 3px 3px #1111112f;
+        filter: drop-shadow(1px 1px 1px #111111);
 
         transition: color 0.1s ease-in-out;
         
