@@ -23,6 +23,7 @@ body {
     --secondary-color: #5B7876;
 
     --lightscale-color: #F2E6B6;
+    --lightscale-color-hover: #f2e6b6d8;
     --darkscale-color: #412A22;
 
     --lightergray: #8F9E8B;
@@ -31,4 +32,13 @@ body {
     0 1px 2px #F2E6B670,
     0 4PX 6PX #F2E6B630,
     0 6px 10px #F2E6B615;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+li {
+    list-style: none;
 }
