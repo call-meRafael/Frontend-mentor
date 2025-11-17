@@ -75,6 +75,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                height: 40px;
                 width: 100%;
                 max-width: 300px;
                 color: #111111;
