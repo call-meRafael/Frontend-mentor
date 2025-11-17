@@ -8,6 +8,7 @@
 }
 
 body {
+    display: flex;
     height: 100dvh;
     font-family: var(--base-font);
 }
@@ -23,20 +24,39 @@ body {
 a.social {
     --bg-img: "";
     background-image: var(--bg-img);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: block;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+
 
     -webkit-background-clip: initial;
     background-clip: initial;
 
     &[aria-label="github"] {
-        --bg-img: url(../assets/github.svg);
+        --bg-img: url(../assets/github-nopadding.svg);
 
         &:hover {
             --bg-img: url(../assets/SVGRepo_iconCarrier.svg);
-            width: 1.5rem;
-            height: 1.5rem;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 3rem;
+            height: 3rem;
+            
+        }
+    }
+
+    &[aria-label="frontend-mentor"] {
+        --bg-img: url(../assets/frontendmentor-svgrepo.svg);
+
+        &:hover {
+            --bg-img: url(../assets/orange-github.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 3rem;
+            height: 3rem;
+            
         }
     }
 }
