@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -15,4 +18,25 @@ body {
     --darkest-bg-color: hsl(0, 0%, 8%);
     --dark-bg-color: hsl(0, 0%, 12%);
     --lightdark-bg-color: hsl(0, 0%, 20%);
+}
+
+a.social {
+    --bg-img: "";
+    background-image: var(--bg-img);
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+
+    -webkit-background-clip: initial;
+    background-clip: initial;
+
+    &[aria-label="github"] {
+        --bg-img: url(../assets/github.svg);
+
+        &:hover {
+            --bg-img: url(../assets/SVGRepo_iconCarrier.svg);
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
 }
