@@ -11,6 +11,7 @@ body {
     display: flex;
     height: 100dvh;
     font-family: var(--base-font);
+    color: #ffffff;
 }
 
 :root {
@@ -19,6 +20,16 @@ body {
     --darkest-bg-color: hsl(0, 0%, 8%);
     --dark-bg-color: hsl(0, 0%, 12%);
     --lightdark-bg-color: hsl(0, 0%, 20%);
+    
+    --shadow-m: inset
+    0 1px 2px #ffffff60,
+    0 2px 4px #00000030,
+    0 4px 8px #00000015;
+
+    --shadow-lg: inset
+    0 1px 2px #ffffff90,
+    0 2px 4px #00000045,
+    0 6px 10px #00000022;
 }
 
 a.social {
@@ -57,6 +68,18 @@ a.social {
             width: 3rem;
             height: 3rem;
             
+        }
+    }
+
+    &[aria-label="linkedin"] {
+        --bg-img: url(../assets/linkedin-base1.svg);
+
+        &:hover {
+            --bg-img: url(../assets/linkedin-icon-hover.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 3rem;
+            height: 3rem;
         }
     }
 }
