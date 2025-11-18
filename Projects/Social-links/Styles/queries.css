@@ -1,3 +1,27 @@
 @media (max-width: 320px) {
+    body {
+        display: grid;
+        min-height: 100dvh;
+    }
+    .content-wrapper {
+        display: grid;
+
+        & .card-box {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            align-items: center;
+            justify-content: center;
+
+            min-height: fit-content;
+
+
+            & .user-profile-box {
+                
+
+            }
+        }
+    }
+
     
 }
