@@ -66,6 +66,7 @@
     }
     .content-wrapper {
         display: flex;
+        
 
         
         
@@ -97,9 +98,10 @@
             & .social-links-box {
                 display: grid;
                 
-                grid-template-columns: 1fr;
+                grid-template-columns: minmax(200px, 300px);
                 justify-items: center;
-                
+
+                min-width: fit-content;
                 
 
                 
