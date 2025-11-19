@@ -16,7 +16,7 @@ body {
     height: 100dvh;
     font-family: var(--base-font);
     color: #ffffff;
-    scroll-behavior: smooth;
+    
 }
 
 :root {
