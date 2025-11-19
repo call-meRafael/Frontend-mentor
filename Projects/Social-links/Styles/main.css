@@ -9,6 +9,7 @@
         flex-flow: column wrap;
         align-items: center;
         gap: 0.5rem;
+        flex: 0 1 auto;
         
         width: 100%;
         min-width: 24rem;
@@ -101,8 +102,8 @@
                 background-repeat: no-repeat;
                 background-size: cover;
                 display: block;
-                width: 3rem;
-                height: 3rem;
+                width: 2rem;
+                height: 2rem;
 
                 -webkit-background-clip: initial;
                 background-clip: initial;
@@ -117,8 +118,8 @@
                         --bg-img: url(../assets/SVGRepo_iconCarrier.svg);
                         background-repeat: no-repeat;
                         background-size: cover;
-                        width: 3rem;
-                        height: 3rem;
+                        width: 2rem;
+                        height: 2rem;
                         filter: drop-shadow(2px 8px 6px #111111);
                     }
                 }
@@ -130,8 +131,8 @@
                         --bg-img: url(../assets/orange-github.svg);
                         background-repeat: no-repeat;
                         background-size: cover;
-                        width: 3rem;
-                        height: 3rem;
+                        width: 2rem;
+                        height: 2rem;
                         filter: drop-shadow(2px 8px 6px #111111);
                     }
                 }
@@ -143,8 +144,8 @@
                         --bg-img: url(../assets/linkedin-icon-hover.svg);
                         background-repeat: no-repeat;
                         background-size: cover;
-                        width: 3rem;
-                        height: 3rem;
+                        width: 2rem;
+                        height: 2rem;
                         filter: drop-shadow(2px 8px 6px #111111);
                     }
                 }
@@ -154,6 +155,8 @@
 
                     &:hover {
                         --bg-img: url(../assets/insta-hover-01.svg);
+                        width: 2rem;
+                        height: 2rem;
                         filter: drop-shadow(2px 8px 6px #111111);
                     }
                 }
@@ -163,6 +166,8 @@
 
                     &:hover {
                         --bg-img: url(../assets/x-hover.svg);
+                        width: 2rem;
+                        height: 2rem;
                         filter: drop-shadow(2px 8px 6px #111111);
                     }
                 }
